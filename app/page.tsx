@@ -62,7 +62,7 @@ export default function Home() {
             <h2>NetRoute</h2>
             <p>Per-application internet routing for Windows. Assign a game to Ethernet, downloads to a phone hotspot, and a browser to Wi-Fi—at the same time, without a VPN.</p>
             <ul className="project-tags" aria-label="NetRoute technologies"><li>C#</li><li>WPF</li><li>Windows Service</li><li>Networking</li></ul>
-            <a className="text-link" href="https://github.com/Heygoodbye/NetRoute" target="_blank" rel="noreferrer">View the project <ArrowUpRight size={17} /></a>
+            <a className="text-link" href="https://netroute.heygoodbye.xyz" target="_blank" rel="noreferrer">View the project <ArrowUpRight size={17} /></a>
           </div>
           <a className="project-visual" href="https://github.com/Heygoodbye/NetRoute" target="_blank" rel="noreferrer" aria-label="Open NetRoute project">
             <div className="window-bar"><i /><i /><i /><span>NETROUTE / DASHBOARD</span></div>
