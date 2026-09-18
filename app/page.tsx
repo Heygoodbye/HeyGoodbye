@@ -73,7 +73,7 @@ export default function Home() {
 
         <article className="featured-project byedata-project reveal">
           <div className="project-copy">
-            <div className="project-heading"><span>02 / Windows utility</span><span className="project-heading-icon"><Activity size={24} /></span></div>
+            <div className="project-heading"><span>02 / Windows utility</span><Image className="byedata-heading-logo" src="/byedata-logo.png" width={54} height={54} alt="ByeData logo" /></div>
             <h2>ByeData</h2>
             <p>Live download and upload totals, placed directly on the Windows taskbar. ByeData stays quiet during fullscreen apps and keeps a readable daily history of every session.</p>
             <ul className="project-tags" aria-label="ByeData technologies"><li>C#</li><li>WinForms</li><li>Windows</li><li>Networking</li></ul>

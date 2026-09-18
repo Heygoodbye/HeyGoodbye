@@ -44,7 +44,7 @@ nav a:hover { color:var(--paper); }
 .featured-project { display:grid; grid-template-columns:.78fr 1.5fr; gap:clamp(30px,5vw,80px); align-items:center; padding:clamp(56px,8vw,110px) 0; border-bottom:1px solid var(--line); }
 .project-heading { display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; }
 .project-heading img { border-radius:14px; }
-.project-heading-icon { display:grid; width:54px; height:54px; place-items:center; border:1px solid var(--line); border-radius:14px; color:var(--acid); background:rgba(255,255,255,.035); }
+.project-heading .byedata-heading-logo { padding:4px; object-fit:contain; background:#edf9f2; }
 .project-copy h2 { margin:36px 0 20px; font-size:clamp(3.8rem,7vw,7.5rem); line-height:.86; letter-spacing:-.075em; }
 .project-copy>p { max-width:520px; color:#c5c4bf; font-size:1.06rem; line-height:1.7; }
 .project-tags { display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:28px 0 40px; list-style:none; }
