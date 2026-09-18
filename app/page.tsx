@@ -2,11 +2,10 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { Activity, ArrowDownRight, ArrowUpRight, Globe2, Layers3, Network, Sparkles, TerminalSquare } from "lucide-react";
+import { Activity, ArrowDownRight, ArrowUpRight, Globe2, Network, Sparkles, TerminalSquare } from "lucide-react";
 
 const projects = [
-  { index: "03", name: "LlamaMind", description: "A lightweight local LLM runner that turns llama.cpp setup, authentication, LAN access, and performance tuning into one approachable workflow.", stack: ["Node.js", "llama.cpp", "Vulkan", "Local AI"], href: "https://github.com/Heygoodbye/LLamaMind", icon: TerminalSquare },
-  { index: "04", name: "Open experiments", description: "Utilities, infrastructure experiments, and small ideas built to make complicated systems easier to operate.", stack: ["TypeScript", "Python", "Docker", "Automation"], href: "https://github.com/Heygoodbye?tab=repositories", icon: Layers3 },
+  { index: "04", name: "LlamaMind", description: "A lightweight local LLM runner that turns llama.cpp setup, authentication, LAN access, and performance tuning into one approachable workflow.", stack: ["Node.js", "llama.cpp", "Vulkan", "Local AI"], href: "https://github.com/Heygoodbye/LLamaMind", icon: TerminalSquare },
 ];
 
 export default function Home() {
@@ -86,6 +85,21 @@ export default function Home() {
           </a>
         </article>
 
+        <article className="featured-project ios-archive-project reveal">
+          <div className="project-copy">
+            <div className="project-heading"><span>03 / Interactive archive</span><Image className="ios-heading-logo" src="/ios-archive-logo.png" width={54} height={54} alt="iOS Archive logo" /></div>
+            <h2>iOS Archive</h2>
+            <p>A living reference for the evolution of iOS—from iOS 13 through iOS 26—with release timelines, feature lifecycles, security records, and device history in one place.</p>
+            <ul className="project-tags" aria-label="iOS Archive topics"><li>iOS</li><li>Timeline</li><li>Research</li><li>Data archive</li></ul>
+            <a className="text-link" href="https://ios-archive.vercel.app/" target="_blank" rel="noreferrer">Explore the archive <ArrowUpRight size={17} /></a>
+          </div>
+          <a className="project-visual ios-archive-visual" href="https://ios-archive.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open iOS Archive website">
+            <div className="window-bar"><i /><i /><i /><span>IOS ARCHIVE / HOME</span></div>
+            <Image src="/ios-archive-preview.png" width={1157} height={723} sizes="(max-width: 900px) 94vw, 56vw" alt="iOS Archive homepage showing the Every iOS, Every change introduction" />
+            <span className="visual-badge">Every iOS. Every change.</span>
+          </a>
+        </article>
+
         <div className="project-list">
           {projects.map(({ index, name, description, stack, href, icon: Icon }) => (
             <a className="project-row reveal" href={href} target="_blank" rel="noreferrer" key={name}>
@@ -106,7 +120,7 @@ export default function Home() {
             <a className="resume-github" href="https://github.com/Heygoodbye" target="_blank" rel="noreferrer"><TerminalSquare size={19} /> github.com/Heygoodbye</a>
           </div>
           <div className="resume-details reveal">
-            <div className="resume-block"><span className="tiny-label">SELECTED EXPERIENCE</span><div className="resume-entry"><div><strong>Independent software developer</strong><small>Product design & engineering</small></div><span>Present</span></div><p>Building NetRoute, ByeData, LlamaMind, and focused tools that simplify complex systems.</p></div>
+            <div className="resume-block"><span className="tiny-label">SELECTED EXPERIENCE</span><div className="resume-entry"><div><strong>Independent software developer</strong><small>Product design & engineering</small></div><span>Present</span></div><p>Building NetRoute, ByeData, iOS Archive, LlamaMind, and focused tools that simplify complex systems.</p></div>
             <div className="resume-block"><span className="tiny-label">CAPABILITIES</span><ul className="skills-list"><li><Sparkles size={16} /> Product engineering</li><li><Network size={16} /> Windows & networking</li><li><TerminalSquare size={16} /> Local AI tooling</li><li><Globe2 size={16} /> Web interfaces</li></ul></div>
             <div className="resume-block"><span className="tiny-label">TECHNOLOGIES</span><p className="tech-line">C# · WPF · TypeScript · Python · Node.js · Docker · Git · Windows Services</p></div>
           </div>

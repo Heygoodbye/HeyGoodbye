@@ -59,6 +59,10 @@ nav a:hover { color:var(--paper); }
 .byedata-project { grid-template-columns:.9fr 1.25fr; }
 .byedata-visual { width:min(100%,680px); justify-self:end; background:#edf9f2; }
 .byedata-visual>img { aspect-ratio:572/553; object-fit:cover; }
+.project-heading .ios-heading-logo { padding:5px; object-fit:contain; background:#f2f5fa; }
+.ios-archive-project { grid-template-columns:.82fr 1.5fr; }
+.ios-archive-visual { background:#eef2f9; }
+.ios-archive-visual>img { aspect-ratio:1157/723; object-fit:cover; }
 .window-bar { display:flex; align-items:center; gap:7px; height:38px; padding:0 13px; border-bottom:1px solid rgba(255,255,255,.1); }
 .window-bar i { width:7px; height:7px; border-radius:50%; background:#46464b; }
 .window-bar i:first-child { background:var(--acid); }
