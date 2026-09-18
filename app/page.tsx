@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { Activity, ArrowDownRight, ArrowUpRight, Globe2, Layers3, Network, Sparkles, TerminalSquare } from "lucide-react";
 
 const projects = [
-  { index: "02", name: "ByeData", description: "A lightweight Windows utility that keeps live download and upload totals on the taskbar, with fullscreen awareness and readable daily usage logs.", stack: ["C#", "WinForms", "Windows", "Networking"], href: "https://heygoodbye.github.io/ByeData-website/", icon: Activity },
   { index: "03", name: "LlamaMind", description: "A lightweight local LLM runner that turns llama.cpp setup, authentication, LAN access, and performance tuning into one approachable workflow.", stack: ["Node.js", "llama.cpp", "Vulkan", "Local AI"], href: "https://github.com/Heygoodbye/LLamaMind", icon: TerminalSquare },
   { index: "04", name: "Open experiments", description: "Utilities, infrastructure experiments, and small ideas built to make complicated systems easier to operate.", stack: ["TypeScript", "Python", "Docker", "Automation"], href: "https://github.com/Heygoodbye?tab=repositories", icon: Layers3 },
 ];
@@ -72,6 +71,21 @@ export default function Home() {
           </a>
         </article>
 
+        <article className="featured-project byedata-project reveal">
+          <div className="project-copy">
+            <div className="project-heading"><span>02 / Windows utility</span><span className="project-heading-icon"><Activity size={24} /></span></div>
+            <h2>ByeData</h2>
+            <p>Live download and upload totals, placed directly on the Windows taskbar. ByeData stays quiet during fullscreen apps and keeps a readable daily history of every session.</p>
+            <ul className="project-tags" aria-label="ByeData technologies"><li>C#</li><li>WinForms</li><li>Windows</li><li>Networking</li></ul>
+            <a className="text-link" href="https://heygoodbye.github.io/ByeData-website/" target="_blank" rel="noreferrer">View the project <ArrowUpRight size={17} /></a>
+          </div>
+          <a className="project-visual byedata-visual" href="https://heygoodbye.github.io/ByeData-website/" target="_blank" rel="noreferrer" aria-label="Open ByeData project website">
+            <div className="window-bar"><i /><i /><i /><span>BYEDATA / USAGE</span></div>
+            <Image src="/byedata-app.png" width={572} height={553} sizes="(max-width: 900px) 94vw, 50vw" alt="ByeData application showing session network usage and settings" />
+            <span className="visual-badge"><Activity size={16} /> Lives on the taskbar</span>
+          </a>
+        </article>
+
         <div className="project-list">
           {projects.map(({ index, name, description, stack, href, icon: Icon }) => (
             <a className="project-row reveal" href={href} target="_blank" rel="noreferrer" key={name}>
@@ -92,7 +106,7 @@ export default function Home() {
             <a className="resume-github" href="https://github.com/Heygoodbye" target="_blank" rel="noreferrer"><TerminalSquare size={19} /> github.com/Heygoodbye</a>
           </div>
           <div className="resume-details reveal">
-            <div className="resume-block"><span className="tiny-label">SELECTED EXPERIENCE</span><div className="resume-entry"><div><strong>Independent software developer</strong><small>Product design & engineering</small></div><span>Present</span></div><p>Building NetRoute, LlamaMind, and focused tools that simplify complex systems.</p></div>
+            <div className="resume-block"><span className="tiny-label">SELECTED EXPERIENCE</span><div className="resume-entry"><div><strong>Independent software developer</strong><small>Product design & engineering</small></div><span>Present</span></div><p>Building NetRoute, ByeData, LlamaMind, and focused tools that simplify complex systems.</p></div>
             <div className="resume-block"><span className="tiny-label">CAPABILITIES</span><ul className="skills-list"><li><Sparkles size={16} /> Product engineering</li><li><Network size={16} /> Windows & networking</li><li><TerminalSquare size={16} /> Local AI tooling</li><li><Globe2 size={16} /> Web interfaces</li></ul></div>
             <div className="resume-block"><span className="tiny-label">TECHNOLOGIES</span><p className="tech-line">C# · WPF · TypeScript · Python · Node.js · Docker · Git · Windows Services</p></div>
           </div>
