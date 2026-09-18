@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { ArrowDownRight, ArrowUpRight, Globe2, Layers3, Network, Sparkles, TerminalSquare } from "lucide-react";
+import { Activity, ArrowDownRight, ArrowUpRight, Globe2, Layers3, Network, Sparkles, TerminalSquare } from "lucide-react";
 
 const projects = [
-  { index: "02", name: "LlamaMind", description: "A lightweight local LLM runner that turns llama.cpp setup, authentication, LAN access, and performance tuning into one approachable workflow.", stack: ["Node.js", "llama.cpp", "Vulkan", "Local AI"], href: "https://github.com/Heygoodbye/LLamaMind", icon: TerminalSquare },
-  { index: "03", name: "Open experiments", description: "Utilities, infrastructure experiments, and small ideas built to make complicated systems easier to operate.", stack: ["TypeScript", "Python", "Docker", "Automation"], href: "https://github.com/Heygoodbye?tab=repositories", icon: Layers3 },
+  { index: "02", name: "ByeData", description: "A lightweight Windows utility that keeps live download and upload totals on the taskbar, with fullscreen awareness and readable daily usage logs.", stack: ["C#", "WinForms", "Windows", "Networking"], href: "https://heygoodbye.github.io/ByeData-website/", icon: Activity },
+  { index: "03", name: "LlamaMind", description: "A lightweight local LLM runner that turns llama.cpp setup, authentication, LAN access, and performance tuning into one approachable workflow.", stack: ["Node.js", "llama.cpp", "Vulkan", "Local AI"], href: "https://github.com/Heygoodbye/LLamaMind", icon: TerminalSquare },
+  { index: "04", name: "Open experiments", description: "Utilities, infrastructure experiments, and small ideas built to make complicated systems easier to operate.", stack: ["TypeScript", "Python", "Docker", "Automation"], href: "https://github.com/Heygoodbye?tab=repositories", icon: Layers3 },
 ];
 
 export default function Home() {
